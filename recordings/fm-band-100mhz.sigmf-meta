@@ -1,0 +1,15 @@
+{
+  "global": {
+    "core:datatype": "cu8",
+    "core:sample_rate": 768000,
+    "core:version": "1.0.0",
+    "core:description": "SIMULATED, not a real capture: three FM stations at 99.75, 100.05 and 100.30 MHz, with noise, made by RadioLab.Lab chapter 9. The simulated receiver is tuned 2 kHz low, as cheap receivers often are."
+  },
+  "captures": [
+    {
+      "core:sample_start": 0,
+      "core:frequency": 100000000
+    }
+  ],
+  "annotations": []
+}

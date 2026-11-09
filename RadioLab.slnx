@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/lab/">
+    <Project Path="lab/RadioLab.Lab/RadioLab.Lab.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/RadioLab/RadioLab.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RadioLab.Tests/RadioLab.Tests.csproj" />
+  </Folder>
+</Solution>

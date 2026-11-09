@@ -1,0 +1,15 @@
+{
+  "global": {
+    "core:datatype": "cu8",
+    "core:sample_rate": 256000,
+    "core:version": "1.0.0",
+    "core:description": "SIMULATED, not a real capture: three AM stations at 960, 1020 and 1050 kHz, with noise, made by RadioLab.Lab chapter 9."
+  },
+  "captures": [
+    {
+      "core:sample_start": 0,
+      "core:frequency": 1000000
+    }
+  ],
+  "annotations": []
+}
