@@ -32,3 +32,7 @@ Each experiment writes CSV files you can open in a spreadsheet (`output/data`) a
 `recordings/fm-band-100mhz` and `recordings/am-band-1mhz` are **simulations**, not captures from real hardware: three FM stations around 100 MHz and three AM stations around 1 MHz, built the way transmitters build their signals, with noise added, stored as 8-bit I/Q samples with [SigMF](https://sigmf.org/) metadata, the format real software-defined radio receivers produce. Their metadata says they are simulated. Chapter 9's experiment regenerates them exactly.
 
 The stations play two old folk tunes, *Frère Jacques* and *Ode to Joy*, and Morse code.
+
+## Licence
+
+The code and the simulated recordings are released under the MIT licence; see `LICENSE`. The book itself is published separately under CC BY 4.0.
