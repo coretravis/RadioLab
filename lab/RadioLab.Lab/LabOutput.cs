@@ -34,8 +34,12 @@ public sealed class LabOutput
     {
         var text = new StringBuilder($"{x},{y},series\n");
         foreach (var (label, xs, ys) in series)
+        {
+            // Labels are written unquoted, so a comma would split the row into an extra column.
+            if (label.Contains(',')) throw new ArgumentException($"A series label may not contain a comma: {label}");
             for (int i = 0; i < xs.Count; i++)
                 text.Append(Format(xs[i])).Append(',').Append(Format(ys[i])).Append(',').Append(label).Append('\n');
+        }
         File.WriteAllText(Path.Combine(Data, name), text.ToString());
         Console.WriteLine($"  data/{name}");
     }

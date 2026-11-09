@@ -16,6 +16,7 @@ public static class Chapter10
         var fm = IqRecording.Read(Path.Combine(lab.Recordings, "fm-band-100mhz"));
         double[] music = ReceiveFm(fm, stationHz: 100.05e6, out double[] frequency);
         lab.Wav("fm-station.wav", music, 32_000);
+        Console.WriteLine($"  average turning speed {Measure.Mean(frequency) / 1000:0.00} kHz: the receiver's tuning error");
         double[] weak = ReceiveFm(fm, stationHz: 100.30e6, out _);
         lab.Wav("fm-weak-station.wav", weak, 32_000);
 

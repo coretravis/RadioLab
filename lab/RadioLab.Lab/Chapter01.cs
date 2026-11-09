@@ -16,7 +16,5 @@ public static class Chapter01
         // The first 40 samples, with their times in milliseconds, to look at in a chart.
         double[] milliseconds = Generate.Time(sampleRate, 40).Select(t => t * 1000).ToArray();
         lab.Csv("ch01-first-samples.csv", ["milliseconds", "value"], milliseconds, tone[..40]);
-
-        Console.WriteLine($"  RMS {Measure.Rms(tone):0.0000}, level {Measure.DbFs(tone):0.0} dBFS");
     }
 }

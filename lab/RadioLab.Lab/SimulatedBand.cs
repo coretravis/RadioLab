@@ -58,6 +58,7 @@ public static class SimulatedBand
             previous = audio[n];
             phase += carrierStep + 2 * Math.PI * deviation * boosted / FmRate;
             if (phase > Math.PI) phase -= 2 * Math.PI;
+            else if (phase < -Math.PI) phase += 2 * Math.PI;
             band[n] += Complex.FromPolarCoordinates(amplitude, phase);
         }
     }

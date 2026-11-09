@@ -16,9 +16,9 @@ public static class Chapter07
         double[] long101 = FilterDesign.LowPass(2000, rate, 101);
         lab.SeriesCsv("ch07-response.csv", "hz", "gain_db",
         [
-            ("moving average, 24 taps", f, f.Select(x => FilterDesign.GainDb(average, x, rate)).ToArray()),
-            ("windowed sinc, 31 taps", f, f.Select(x => FilterDesign.GainDb(short31, x, rate)).ToArray()),
-            ("windowed sinc, 101 taps", f, f.Select(x => FilterDesign.GainDb(long101, x, rate)).ToArray()),
+            ("moving average (24 taps)", f, f.Select(x => FilterDesign.GainDb(average, x, rate)).ToArray()),
+            ("windowed sinc (31 taps)", f, f.Select(x => FilterDesign.GainDb(short31, x, rate)).ToArray()),
+            ("windowed sinc (101 taps)", f, f.Select(x => FilterDesign.GainDb(long101, x, rate)).ToArray()),
         ]);
 
         // Hear it: a tune buried in hiss, then the same after a 2.5 kHz low-pass filter.

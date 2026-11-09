@@ -31,8 +31,8 @@ public static class Chapter08
         double[] f = Fourier.CentredFrequencies(n, newRate);
         lab.SeriesCsv("ch08-decimation.csv", "hz", "db",
         [
-            ("every 4th sample, no filter", f, Spectrum(naive)),
-            ("filtered, then every 4th sample", f, Spectrum(proper)),
+            ("every 4th sample with no filter", f, Spectrum(naive)),
+            ("filtered first then every 4th sample", f, Spectrum(proper)),
         ]);
     }
 }

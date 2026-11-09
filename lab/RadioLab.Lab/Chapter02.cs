@@ -34,7 +34,7 @@ public static class Chapter02
         lab.SeriesCsv("ch02-mixing.csv", "seconds", "value",
         [
             ("10 Hz × 12 Hz", tm, product),
-            ("½·cos(2π·2t), the difference part", tm, difference),
+            ("½·cos(2π·2t): the difference part", tm, difference),
         ]);
     }
 }
