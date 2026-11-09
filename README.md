@@ -9,6 +9,8 @@ RadioLab is plain C# on .NET 10, using only the libraries built into .NET. It ge
 You need the [.NET 10 SDK](https://dotnet.microsoft.com/download).
 
 ```sh
+git clone https://github.com/coretravis/RadioLab.git
+cd RadioLab
 dotnet test                                     # the unit tests, one file per part of the library
 dotnet run --project lab/RadioLab.Lab -- 3      # chapter 3's experiment, written to ./output
 dotnet run --project lab/RadioLab.Lab -- all    # every chapter's experiment
